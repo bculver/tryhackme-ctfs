@@ -1,6 +1,6 @@
 # Pickle Rick CTF
 
-The CTF can be found [here](https://tryhackme.com/room/picklerick)
+The CTF can be found [here](https[:]//tryhackme.com/room/picklerick)
 
 Tuesday, January 10, 2023
 
@@ -10,7 +10,7 @@ This Rick and Morty themed challenge requires you to exploit a webserver to find
 
 Deploy the virtual machine on this task and explore the web application: 10.10.50.28
 
-You can also access the web app using the following link: [https://10-10-50-28.p.thmlabs.com](https://10-10-50-28.p.thmlabs.com/) (this will update when the machine has fully started)
+You can also access the web app using the following link: https[:]//10-10-50-28.p.thmlabs.com (this will update when the machine has fully started)
 
 ----------------------------------------
 
@@ -30,7 +30,7 @@ Note: during this event, I am feeding kids … so I walk away often during scans
 
 ## What is the first ingredient Rick needs?
 
-After opening the site [https://10-10-50-28.p.thmlabs.com](https://10-10-50-28.p.thmlabs.com/) , we see:
+After opening the site https[:]//10-10-50-28.p.thmlabs.com , we see:
 
 ![Pickle Rick Image](assets/picklerick-02.png)
 
@@ -44,7 +44,7 @@ Let look at the robots.txt
 
 I will also run the gobuster while we are at it.
 
-> gobuster dir -u <https://10-10-50-28.p.thmlabs.com> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+> gobuster dir -u https[:]//10-10-50-28.p.thmlabs.com -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 
 ![Pickle Rick Image](assets/picklerick-05.png)
 
@@ -69,7 +69,7 @@ Lets dig a little deeper:
 
 ![Pickle Rick Image](assets/picklerick-07.png)
 
-> gobuster dir -u <https://10-10-50-28.p.thmlabs.com> -x .php,.html,.js,.css -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+> gobuster dir -u https[:]//10-10-50-28.p.thmlabs.com -x .php,.html,.js,.css -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 
 ![Pickle Rick Image](assets/picklerick-08.png)
 
@@ -81,7 +81,7 @@ Looks like my CTF machine timed out … so I started a new one.
 
 Back to the login page
 
-<https://10-10-106-125.p.thmlabs.com/login.php>
+https[:]//10-10-106-125.p.thmlabs.com/login.php
 
 The source was uninteresting.
 
